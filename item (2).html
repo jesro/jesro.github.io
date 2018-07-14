@@ -1,0 +1,393 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		 <style>
+
+		#gap{
+		margin:10px;
+		}
+
+	
+		.four{
+		display:inline-flex;
+		padding:30px 30px 30px 15px;
+		}
+
+		
+		 </style>
+	</head>
+	<body>
+		<div id="container">
+			<table id="table" cellpadding="15" cellspacing="10" border="1">
+				<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Product Category</th>
+					<th>Quantity</th>
+					<th>Available</th>
+					<th>Coupon Applicable</th>
+					<th>Add Row</th>
+					<th>Delete Row</th>
+				</tr>
+				</thead>
+				<tbody id="contain">
+				<tr>
+				<td class="one"><input type="text" placeholder="" id="join"></td>
+				<td>
+				<select id="joined">
+					<option value="Apparel">Apparel</option>
+					<option value="Jewellery">Jewellery</option>
+					<option value="Electronics">Electronics</option>   
+				</select>
+				</td>
+				<td class="four">
+					<button id="cool" onclick="inc()">+</button><input type="text" id="jes">
+					<button id="cold" onclick="dec()">-</button>
+				</td>
+				<td   id="joining" class="one">
+				<input type="radio" name="radio" value="yes" id="radio">Yes<br>
+				<input type="radio" name="radio" value="no" id="radio1">No
+				</td>
+				<td class="two">
+					<form name="give" id="two">
+					<input type="checkbox" class="message" value="HDFC">HDFC
+					<input type="checkbox" class="message" value="FIRST TIME USER">FIRST TIME USER
+					<input type="checkbox" class="message" value="ICICI">ICICI
+					<input type="checkbox" class="message" value="NET BANKING">NET BANKING
+					<input type="checkbox" class="message" value="PRIME">PRIME
+					</form>
+				</td>
+				<td>
+					<button id="add" onclick="abc()">ADD</button>
+				</td>
+				<td class="three">
+					<button id="remove" onclick="RemRow()" id="delete">REMOVE</button>
+				</td>
+				</tr>
+				</tbody>								
+				</table>
+				
+		</div>
+		<center><button onclick="ab()" id="gap">Submit</button></center>
+		
+		<div id="holder">		
+			<table id="tableDisplay" cellpadding="15" cellspacing="10" border="0">
+			<thead>
+				<th>Product Name</th>
+				<th>Product Category</th>
+				<th>Quantity</th>
+				<th>Available</th>
+				<th>Coupon Applicable</th>
+			</thead>
+			<tbody>
+			<tr>
+				<td id="im" class="one"></td>
+				<td id="imp"></td>
+				<td id="imo" class="one"></td>
+				<td id="imr" class="one"></td>
+				<td id="imt"></td>
+				</tr>
+			</tbody>
+			</table>
+			<script>
+					var join=document.getElementById('join');
+					var joined=document.getElementById('joined');
+					var cool=document.getElementById('cool');
+					var cold=document.getElementById('cold');
+					var radio=document.getElementById('radio');
+					var radio1=document.getElementById('radio1');
+					var two=document.getElementById('two');
+					var add=document.getElementById('add');
+					var remove=document.getElementById('remove');
+					var tab = document.getElementById("table").getElementsByTagName("TBODY")[0];
+					var tab1 = document.getElementById("tableDisplay").getElementsByTagName("TBODY")[0];
+					var rowLength = document.getElementById('table').getElementsByTagName('tr');
+					var rowLength1 = document.getElementById("tableDisplay").getElementsByTagName('tr');
+					//console.log(rowLength1[1].getElementsByTagName('td'));
+					//console.log(rowLength.length);
+					var cellLength =[],cellLength1 =[],arr=[],rowArray=[],firstCell=[];
+					
+					for(var count=1;count < rowLength.length; count++){
+						//rowLength.getElementsByTagName('tr')[count];
+						rowArray.push(rowLength[count]);
+						cellLength.push(rowLength[count].getElementsByTagName('td'));
+						cellLength1.push(rowLength1[count].getElementsByTagName('td'));
+					}
+									
+					
+					//html
+					
+					var boxer=0;
+					//debugger;
+				function ab(){
+					for(var store=2;store<rowLength.length;store++){
+					//debugger;
+					
+					var col = document.getElementsByName('car');
+					if(rowLength.length>=3){
+					//monkey=0,monk=0;
+					//for(store=2;store<rowLength.length;store++){
+					rowLength1[store].getElementsByTagName('td')[0].innerHTML=rowLength[store].children[0].children[0].value;
+					rowLength1[store].getElementsByTagName('td')[1].innerHTML=rowLength[store].children[1].children[0].value;
+					
+					rowLength[store].children[2].children[1].previousSibling.onclick=function(event){
+						rowLength[store].children[2].children[1].value=boxer;
+						boxer=boxer+1;
+					};
+					
+					rowLength[store].children[2].children[1].nextSibling.onclick=function(event){
+						rowLength[store].children[2].children[1].value=boxer;
+						boxer=boxer-1;		
+						if(boxer<=0){
+							boxer=0;
+						}
+					};
+					
+					rowLength1[store].getElementsByTagName('td')[2].innerHTML=rowLength[store].children[2].children[1].value;
+							rowLength[store].children[3].children[0].name=store;	
+							rowLength[store].children[3].children[3].name=store;
+						if (rowLength[store].children[3].children[0].checked==true)
+						{
+						var variable="Yes";
+						
+						}else if(rowLength[store].children[3].children[3].checked==true){
+							variable="No";
+							
+						}else{
+							variable="NA";
+						}
+					
+					rowLength1[store].getElementsByTagName('td')[3].innerHTML = variable;
+					//rowLength1[store].getElementsByTagName('td')[3].innerHTML=rowLength[store].children[3].children[0].value;
+					//debugger;
+
+					var fully=[];
+					for(var t=0;t<5;t++){
+					if(rowLength[store].children[4].children[0].nextSibling.checked){
+						fully[0]="HDFC";
+					}
+					if(rowLength[store].children[4].children[2].nextSibling.checked){
+						fully[1]="FirstTimeUser";
+					}
+					if(rowLength[store].children[4].children[4].nextSibling.checked){
+						fully[2]="ICICI";
+					}
+					if(rowLength[store].children[4].children[6].nextSibling.checked){
+						fully[3]="NetBanking";
+					}
+					if(rowLength[store].children[4].children[8].nextSibling.checked){
+						fully[4]="PRIME";
+					}
+					}
+					rowLength1[store].getElementsByTagName('td')[4].innerHTML=fully.join(" ");
+					
+					
+					//rowLength1[store].getElementsByTagName('td')[4].innerHTML=rowLength[store].children[4].children[0].value;
+					//}
+
+					
+					
+					//store++;
+					}else if((rowLength.length>=3)&&(rowLength1[store]!== store)){
+					ab();
+					
+					}
+					}
+					//end value store
+					
+						
+					
+					document.getElementById("tableDisplay").style.display="initial";
+					if(document.getElementById('join').value){
+					document.getElementById("im").innerHTML=document.getElementById('join').value;
+					}else{
+					document.getElementById("im").innerHTML="NA";
+					}
+					if(document.getElementById('joined').value){
+					document.getElementById("imp").innerHTML=document.getElementById('joined').value;
+					}else{
+					document.getElementById("imp").innerHTML="NA";
+					}
+					if(document.getElementById('jes').value){
+					document.getElementById("imo").innerHTML=document.getElementById('jes').value;
+					}else{
+					document.getElementById("imo").innerHTML="NA";
+					}
+					var cold = document.getElementsByName('radio');
+					for (var i = 0, length = cold.length; i < length; i++)
+					{
+						if (cold[i].checked)
+						{
+						document.getElementById("imr").innerHTML = cold[i].value;
+						break;
+						}else{
+						document.getElementById("imr").innerHTML="NA";
+						}
+					}
+					
+					var rock = two.children;
+					if(document.getElementById("imt").innerHTML == ""){
+						for(var got=0;got<5;got++){
+							if(rock[got].checked){
+								document.getElementById("imt").innerHTML += rock[got].value+" ";
+							}
+						}
+					}else{
+						document.getElementById("imt").innerHTML == "";
+					}
+				}
+					
+					//End html
+					
+			function abc(){
+					
+					AddRow();
+					
+			}
+			//add row
+			i=1;
+			function AddRow(){
+				
+				row = tab.insertRow(-1);
+				var cell=row.insertCell(-1);
+				var btn = document.createElement("INPUT");
+				btn.type = "text";
+				cell.appendChild(btn);
+				cell=row.insertCell(-1);
+				var drp = document.createElement('select');
+				frag = document.createDocumentFragment();
+				drp.options.add(new Option("Apparel"));
+				drp.options.add(new Option("Jewellery"));
+				drp.options.add(new Option("Electronics"));
+				frag.appendChild(drp);
+				cell.appendChild(frag);
+				cell=row.insertCell(-1);
+				var inc=document.createElement('input');
+				inc.type="button";
+				inc.value="+";
+				var text =document.createElement('input');
+				text.type="number";
+				var dec=document.createElement('input');
+				dec.type="button";
+				dec.value="-";
+				frag.appendChild(inc);
+				frag.appendChild(text);
+				frag.appendChild(dec);
+				cell.appendChild(frag);
+				cell=row.insertCell(-1);
+				var radio =document.createElement('input');
+				radio.type="radio";
+				radio.name="car";
+				radio.value="";
+				radio.innerHTML="Yes";
+				var write = document.createElement('span');
+				write.innerHTML="Yes";
+				var cut = document.createElement('span');
+				cut.innerHTML="<br />";
+				var rad =document.createElement('input');
+				rad.type="radio";
+				rad.name="car";
+				rad.value="";
+				rad.textContent="No";
+				var wr = document.createElement('span');
+				wr.innerHTML="No";
+				frag.appendChild(radio);
+				frag.appendChild(write);
+				frag.appendChild(cut);
+				frag.appendChild(rad);
+				frag.appendChild(wr);
+				cell.appendChild(frag);
+				cell=row.insertCell(-1);
+				var form = document.createElement('form');
+				form.id="last";
+				var checkbox = document.createElement('input');
+				checkbox.type = "checkbox";
+				checkbox.name = "name";
+				checkbox.value = "HDFC";
+				var HDFC = document.createElement('span');
+				HDFC.innerHTML="HDFC";
+				var check = document.createElement('input');
+				check.type = "checkbox";
+				check.name = "name";
+				check.value = "FIRST TIME USER";
+				var USER = document.createElement('span');
+				USER.innerHTML="FIRST TIME USER";
+				var check1 = document.createElement('input');
+				check1.type = "checkbox";
+				check1.name = "name";
+				check1.value = "ICICI";
+				var ICICI = document.createElement('span');
+				ICICI.innerHTML="ICICI";
+				var check2 = document.createElement('input');
+				check2.type = "checkbox";
+				check2.name = "name";
+				check2.value = "NET BANKING";
+				var NET = document.createElement('span');
+				NET.innerHTML="NET BANKING";
+				var check3 = document.createElement('input');
+				check3.type = "checkbox";
+				check3.name = "name";
+				check3.value = "PRIME";
+				var PRIME = document.createElement('span');
+				PRIME.innerHTML="PRIME";	
+				frag.appendChild(form);
+				frag.appendChild(checkbox);
+				frag.appendChild(HDFC);
+				frag.appendChild(check);
+				frag.appendChild(USER);	
+				frag.appendChild(check1);
+				frag.appendChild(ICICI);	
+				frag.appendChild(check2);
+				frag.appendChild(NET);
+				frag.appendChild(check3);
+				frag.appendChild(PRIME);
+				cell.appendChild(frag);
+				cell=row.insertCell(-1);
+				var add = document.createElement('input');
+				add.type = "button";
+				add.name = "name";
+				add.value = "ADD";
+				add.onclick=AddRow;
+				cell.appendChild(add);
+				cell=row.insertCell(-1);
+				var rem = document.createElement('input');
+				rem.type = "button";
+				rem.name = "name";
+				rem.value = "REMOVE";
+				rem.onclick=RemRow;
+				cell.appendChild(rem);
+				
+				//database
+					row1 = tab1.insertRow(-1);
+					var cell1=row1.insertCell(-1);
+					cell1=row1.insertCell(-1);
+					cell1=row1.insertCell(-1);
+					cell1=row1.insertCell(-1);
+					cell1=row1.insertCell(-1);
+				//end database
+				            
+			}
+			//remove row
+			 function RemRow() {
+				tab.deleteRow(-1);
+				//tab1.deleteRow(-1);
+				tab1.remove();
+            }
+			a=0;
+				function inc(){
+				document.getElementById("jes").value=a;
+                a=a+1;
+				}
+				
+				function dec(){
+               document.getElementById("jes").value=a;
+			   a=a-1;
+			   if(a<=0){
+				a=0;
+				}				 
+				}	
+			</script>
+		</div>
+	</body>
+</html>
