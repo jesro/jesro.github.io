@@ -1,114 +1,69 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
- 	<meta charset="UTF-8">
- 	<title>Products</title>
- 	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
- </head>
- <style>
- 	#left{
- 		display: inline-block;
- 		margin:40px 0px 30px 30px;
- 		padding:10px;
- 		float:left;
- 		width:33%;
- 	}
- 	#price p{
- 		color:red;
- 	}
- 	#money{
-		font-size: 20px;
- 	}
- 	#center{
- 		display: inline-block;
- 		margin:50px 20px;
- 		float:center;
- 		width:33%;
- 		clear:both;
- 	}
- 	#para p{
- 		line-height: 2.6;
- 	}
- 	#title{
- 		font-family: "Amazon Ember",Arial,sans-serif;
- 		line-height: 1.6;
- 	}
- 	#right{
- 		display: inline-block;
- 		margin:30px;
- 		padding:10px;
- 		width:15%;
- 	}
- 	#right button{
- 		margin:10px 0;
- 		padding:20px;
- 		width:250px;
- 		background: #f0c14b;
-    	border-color: #a88734 #9c7e31 #846a29;
-    	border-radius: 10px; 
-    	color: #111;
- 	}
- 	#sku{
- 		color:green;
- 	}
- </style>
- <body>
- 	<div class="container">
- 		<div id="left">
- 			<span id="leftpic">
- 				<img src="" width="300px">
- 			</span>
- 		</div>
- 		<div id="center">
- 			<span id="title">
- 				<h3></h3>
- 			</span>
- 			<span id="price">
- 				<p>Sale : ₹ <span id="money"></span>.00</p>
- 			</span>
- 			<span id="sku">
- 				<p>SKU <span id="skuget"></span></p>
- 			</span>
- 			<span id="para">
- 				<p><em>Pay on Delivery (Cash/Card) eligible</em> <br>
-				EMI starts at <b>₹<span class="gang">570</span></b>. No Cost EMI available if you checkout only with this item. Options <br>
-				<strong>In stock.</strong><br>
-				<b>Guaranteed delivery</b> to pincode 600006 - <em>Chennai by Tomorrow 11am with Morning delivery</em> — Order in the next <span class="gany">12</span> hours and <span class="gan">20</span> minutes <br>
-				Sold by STPL Exclusive Online ( <b class="gon"> 4.4 </b> out of <b class="gan"> 5 </b> |<b> 11</b>,<b class="gang">598 </b> ratings) and <i>Fulfilled by Amazon. Gift-wrap available</i></p>
- 			</span>
- 		</div>
- 		<div id="right">
- 			<span id="addtocart">
- 				<button>ADD To CART</button>
- 			</span><br>
- 			<span id="buynow">
- 				<button>BUY NOW</button>
- 			</span>
- 		</div>
- 	</div>
- 	<script>
- 		$(document).ready(function(){
- 			var myUrl=window.location.href;
- 			var obj=new URL(myUrl);
- 			var title = obj.searchParams.get("title");
- 			var price = obj.searchParams.get("price");
- 			var sku = obj.searchParams.get("sku");
- 			var src = obj.searchParams.get("src");
- 			$("#title h3").html(title);
- 			$("#money").html(price);
- 			$("#skuget").html(sku);
- 			$("#leftpic img").attr("src",src);
-      var foot = Math.floor(Math.random()*1000-1);
-      var foo = Math.floor(Math.random()*10);
-      fin=foo-1/10;
-      $(".gang").html(foot);
-      $(".gan").html(foo);
-      $(".gany").html(foo+1);
-      $(".gon").html(fin);
- 		});
- 	</script>
-  </body>
- </html>
+<!Doctype html>
+<html>
+<head>
+	<title>US Electricals</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+	<div class="container" id="added">
+		<div class="box">
+			<div class="wrapper">
+				<div class="somepic">
+					<img id="myImg" src="https://assets.usesi.com/product-media/images/P9059.jpg" alt="Leviton Image">
+				</div>
+				<div id="bigpic">
+					<span id="close">&times;</span>
+					<img id="mybigImg" src="https://assets.usesi.com/product-media/images/P9059.jpg" alt="Leviton Image">
+				</div>
+			</div>
+			<div class="wrapper-one">
+				<div class="para">
+				<span class="price">
+				<span class="cover">
+				<span id="write">$<span class="marking">19.64</span><sup>69</sup><span>/ ea</span>
+				</span>
+				</span>
+				</span>
+					<p>Leviton 2711 4 Wire 3 Pole Polarized Industrial Grade Locking Plug 125/250 Volt 3-Phase 30 Amp NEMA L14-30P Black/White
+					</p>
+					<label id="space-four">SKU: <span class="marked">9059</span></label>
+				</div>
+				
+				
+				<div class="paragraph">
+				Leviton 3-Pole 4-Wire Polarized locking plug accommodates wire of size 14 - 8 AWG. It has cord range of 0.595 - 1.15 Inch. Grounding plug in black/white color, has impact/chemical/abrasion-resistant nylon body and thermoplastic back cov
+				<p id="hideMe">er. It has nylon wiring module, cord clamp and clamp insert. It withstands current rating of 30 Amps and voltage rating of 125/250 Volts. Industrial grade plug with screw terminal connection, has 1-Piece, rivetless 0.035-Inch thick brass contact for optimal conductivity.Plug withstands 2000 Volts dielectric strength per UL498. This 2.7-Inch plug has 1.97-Inch top Dia and 2.22-Inch bottom Dia. It has zinc-plated steel assembly screws for easy installation. It withstands temperature range of -40 to 60 deg C. This plug has NEMA L14-30P configuration. It has HB flammability rating per UL94 to withstand harsh environmental conditions. Locking plug is UL listed, CSA/NOM certified and meets ANSI standards.</p>
+				<span id="hide">...</span>
+				<br><span id="changeMe" onclick="make()">Read More</span>
+				<ul>
+				<li>Ergonomic, fluted body design with radial grip ridge is ideal for gripping, turning and pulling</li>
+				<li>Cord clamp does not have to be disassembled from body for wiring, accepts wire mesh connection strain reliefs</li>
+				<li>Features solid brass contact for optimal signal conductivity</li>
+				</ul>
+				</div>
+				<div class="section">
+					<p>Ships on Monday, July 9<sup>th</sup> from Stoughton, MA</p>
+					<a href="#">View Stock in Nearby Branches</a>
+				</div>
+				<div class="quantity">
+						<small>Qty (ea)</small>
+					<div class="cover">
+						<span onclick="minus()">-</span>
+						<input type="text" value="1">
+						<span onclick="add()">+</span>
+					</div>
+				
+				<div class="footer">
+					<button>Deliver</button>
+					<button>Pick Up</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="js/one.js"></script>
+</body>
+</html>
