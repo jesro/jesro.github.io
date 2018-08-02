@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Knockoutjs Shopping Cart</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+	<style>
+		.custom{
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div id="filterOptions" data-bind="css:{custom:true}">
+			<span>Filters</span>
+			<section>
+				<div>
+					<span>CATEGORIES</span>
+					<div>
+					<span><</span>
+					<a href="knockoutjs-shopping-cart.html">Women's Footwear</a>
+					</div>
+					<div>
+						<a href="">Flats</a><br>
+						<a href="">Heels</a><br>
+						<a href="">Wedges</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<span>PRICE</span>
+			</section>
+			<section>
+				<span>OCCASION   </span><span> v </span>
+				<div>
+					<div>
+						<input type="checkbox">
+						<label>Casual</label>
+					</div>
+					<div>
+						<input type="checkbox">
+						<label>Ethnic</label>
+					</div>
+					<div>
+						<input type="checkbox">
+						<label>Formal</label>
+					</div>
+					<div>
+						<input type="checkbox">
+						<label>Party</label>
+					</div>
+				</div>
+			</section>
+			<section>
+				<span>SIZE   </span><span> v </span>
+				<div>
+					<div>
+						<input type="checkbox">
+						<label>3</label>
+					</div>
+					<div>
+						<input type="checkbox">
+						<label>4</label>
+					</div>
+					<div>
+						<input type="checkbox">
+						<label>5</label>
+					</div>
+					<div>
+						<input type="checkbox">
+						<label>6</label>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="products">
+			<div id="headings"></div>
+			<div data-bind="foreach:{data:product,as:'products'}">
+				<div data-bind="text:products.Name"></div>
+				<!-- <div data-bind="text:products.Image"></div> -->
+				<div data-bind="text:products.Size"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		//initializing Array
+		var named=[];
+		//Get Data From JSON File
+		$.getJSON('data.json',function(data){
+			for (var i = 0; i < data.length; i++) {
+                    var name = data[i].Name; 
+                    var image = data[i].Image;
+                    var tag = data[i].Tag;
+                    var size = data[i].Size;
+                    named.push( new model(name,image,tag,size));
+            }
+		});
+		/*$.ajax({
+			url:'data.json',
+			type:'GET',
+			cache:false,
+			async:false,
+			contentType: "application/json; charset=utf-8",
+            dataType: "json", 
+            traditional: true,
+            success: function (data) {
+            	alert('Process Successful');
+            	for (var i = 0; i < data.length; i++) {
+                    var name = data[i].Name; 
+                    var image = data[i].Image;
+                    var tag = data[i].Tag;
+                    var size = data[i].Size;
+                    named.push( new model(name,image,tag,size));
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.status + "," + jqXHR.responseText + "," + errorThrown);
+            }
+		});*/
+
+		//Model
+		function model(name,image,tag,size){
+			this.Name=name;
+			this.Image=image;
+			this.Tag=tag;
+			this.Size=size;
+		}
+		//View Model
+		var viewModel=function(){
+			var self=this;
+			this.product=ko.observableArray(named);
+		}
+		ko.applyBindings(viewModel);
+	</script>
+</body>
+</html>
