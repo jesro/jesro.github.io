@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">   <!--Need To Do checkbox adding in first row, remove row in database -->
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="product"></div>
+	<script>
+		$(document).ready(function(){
+			var $table=$('<table/>');
+			$table.attr({
+				cellpadding:"15", cellspacing:"10", border:"1"
+			});
+			var arr = new Array();
+			arr.push(['Product Name','Product Category','Quantity','Available','Coupon Applicable','Add Row','Delete Row']);
+			arr.push(['<input type="text" placeholder="products" id="search">',
+				'<select id="joined"><option value="Apparel">Apparel</option><option value="Jewellery">Jewellery</option><option value="Electronics">Electronics</option></select>',
+				'<input type="number" id="jes">',
+				'<input type="radio" name="radio" value="yes" id="radio">Yes<br><input type="radio" name="radio" value="no" id="radio1">No',
+				'<form name="give" id="two"><input type="checkbox" class="message" value="HDFC">HDFC<input type="checkbox" class="message" value="FIRST TIME USER">FIRST TIME USER<input type="checkbox" class="message" value="ICICI">ICICI<input type="checkbox" class="message" value="NET BANKING">NET BANKING<input type="checkbox" class="message" value="PRIME">PRIME</form>',
+				'<button id="add">ADD</button>',
+				'<button id="delete">REMOVE</button>']);
+			$table.append('<thead><tr><th>'+arr[0][0]+'</th><th>'+arr[0][1]+'</th><th>'+arr[0][2]+'</th><th>'+arr[0][3]+'</th><th>'+arr[0][4]+'</th><th>'+arr[0][5]+'</th><th>'+arr[0][6]+'</th></tr></thead><tbody id="tbody"><tr><td>'+arr[1][0]+'</td><td>'+arr[1][1]+'</td><td>'+arr[1][2]+'</td><td>'+arr[1][3]+'</td><td>'+arr[1][4]+'</td><td>'+arr[1][5]+'</td><td>'+arr[1][6]+'</td></tr></tbody>');
+			$("#product").append($table);
+			$("#cool").css("display","inline-flex");
+			$($table).after('<center><button style="margin:10px;" id="gap">Submit</button></center>');
+			$('center').after('<table cellpadding="15" cellspacing="10"><thead><tr><th>'+arr[0][0]+'</th><th>'+arr[0][1]+'</th><th>'+arr[0][2]+'</th><th>'+arr[0][3]+'</th><th>'+arr[0][4]+'</th></tr></thead><tbody id="tbodynew"><tr><td id="im" class="one"></td><td id="imp"></td><td id="imo" class="one"></td><td id="imr" class="one"></td><td id="imt"></td></tr></tbody></table>');
+
+			//Add New Row
+			var random=1;
+			//var addNew = ;
+			//Add New Row for Database
+			var addNewRow = '<tr><td></td><td></td><td></td><td></td><td></td></tr>';
+
+			$(document).on("click","#add",function(){
+				$("#tbody").append('<tr><td>'+arr[1][0]+'</td><td>'+arr[1][1]+'</td><td>'+arr[1][2]+'</td><td><input type="radio" name="'+random+'" value="yes">Yes<br><input type="radio" name="'+random+'" value="no">No</td><td>'+arr[1][4]+'</td><td>'+arr[1][5]+'</td><td>'+arr[1][6]+'</td></tr>');
+				$("#tbodynew").append(addNewRow);
+				random++;
+			});
+			$(document).on("click","#delete",function(){
+				$(this).closest('tr').remove();
+				//$("#tbodynew").closest('tr').remove();
+			});
+			$(document).on("click","#gap",function(){
+				$("#im").html($("#search").val());
+				$("#imp").html($("#joined").val());
+				$("#imo").html($("#jes").val());
+				$("#imr").html($("input[type=radio]:checked").val());
+				var favorite = [];
+            $.each($("input[type=checkbox]:checked"), function(){            
+                favorite.push($(this).val());
+            });
+				$("#imt").html(favorite.join(" "));
+
+				//For DataBase
+				for(var i=1;i<=$("#tbodynew tr").length;i++){
+				$("#tbodynew tr").eq(i).children().eq(0).text($("#tbody tr").eq(i).children().eq(0).children().eq(0).val());
+				$("#tbodynew tr").eq(i).children().eq(1).text($("#tbody tr").eq(i).children().eq(1).children().eq(0).val());
+				$("#tbodynew tr").eq(i).children().eq(2).text($("#tbody tr").eq(i).children().eq(2).children().eq(0).val());
+				//Radio Button
+				if($("#tbody tr").eq(i).children().eq(3).children().eq(0).is(':checked')?true:false){
+					$("#tbodynew tr").eq(i).children().eq(3).text("Yes");
+				}else if($("#tbody tr").eq(i).children().eq(3).children().eq(2).is(':checked')?true:false){
+					$("#tbodynew tr").eq(i).children().eq(3).text("No");
+				}else{
+					$("#tbodynew tr").eq(i).children().eq(3).text("NA");
+				}
+				//Checkbox
+				/*if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(0).is(":checked")){
+					$("#tbodynew tr").eq(i).children().eq(4).text($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(0).val());
+				}else if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(1).is(":checked")){
+					$("#tbodynew tr").eq(i).children().eq(4).text($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(1).val());
+				}else{
+					$("#tbodynew tr").eq(i).children().eq(4).text("NA");
+				}*/
+
+				var arry=[];
+				for(var j=0;j<5;j++){
+					if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(0).is(":checked")){
+						arry[0]="HDFC";
+					}
+					if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(1).is(":checked")){
+						arry[1]="FirstTimeUser";
+					}
+					if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(2).is(":checked")){
+						arry[2]="ICICI";
+					}
+					if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(3).is(":checked")){
+						arry[3]="NetBanking";
+					}
+					if($("#tbody tr").eq(i).children().eq(4).children().eq(0).children().eq(4).is(":checked")){
+						arry[4]="PRIME";
+					}
+				}
+				$("#tbodynew tr").eq(i).children().eq(4).text(arry.join(" "));
+				//End Checkbox
+				}
+				
+			});
+
+			//console.log($("#tbodynew tr").length);
+			console.log($("#tbodynew tr").length);
+			
+		});
+	</script>
+</body>
+</html>
+
+
+
