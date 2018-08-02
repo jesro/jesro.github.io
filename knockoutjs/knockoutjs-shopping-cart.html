@@ -90,15 +90,16 @@
 		//initializing Array
 		var named=[];
 		//Get Data From JSON File
-		$.getJSON('https://jesro.github.io/knockoutjs/data.json',function(data){
+		//$.getJSON('file:///C:/Users/Ziffity/Desktop/Intern%20Files/Jquery%20project/data.json',function(data){
 			for (var i = 0; i < data.length; i++) {
-                    var name = data[i].Name; 
-                    var image = data[i].Image;
-                    var tag = data[i].Tag;
-                    var size = data[i].Size;
+                    var name = data[i].name; 
+                    var image = data[i].image;
+                    var tag = data[i].tag;
+                    var size = data[i].size;
                     named.push( new model(name,image,tag,size));
             }
-		});
+           
+		//});
 		/*$.ajax({
 			url:'data.json',
 			type:'GET',
