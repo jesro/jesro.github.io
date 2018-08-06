@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wire Terminals - Ring & Fork</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+</head>
+<body>
+	<input type="text" size="30" data-bind="textInput:searchInput,hasFocus:focus,selected:focus" placeholder="Search by Keyword or part number"><br>
+
+	<span><h2>Searching: </h2><h2 data-bind="text:searchedInput"></h2></span>
+	<div id="wrapper">
+		<div class="title">
+				<h6>Filter By</h6>
+		</div>
+		<div class="row" data-bind="style:{'display':'inline-flex'}">
+			<div class="button">
+				<select data-bind="options:dropdownType,optionsCaption:'Type',event:{change:showType},value:chosenType"></select>
+			</div>
+			
+			<div class="button" data-bind="if:showDropdownType">
+				<select data-bind="options:dropdownRating,optionsCaption:'Voltage Rating',event:{change:showRating},value:chosenRating"></select>
+			</div>
+			<div class="button" data-bind="if:showDropdownType">
+				<select data-bind="options:dropdownDiameter,optionsCaption:'Barrel Diameter',event:{change:showDiameter},value:chosenDiameter"></select>
+			</div>			
+
+			
+			<div class="button" data-bind="if:(showDropdownRating)&&(showDropdownDiameter)">
+				<select data-bind="options:dropdownSize,optionsCaption:'Stud Size',event:{change:showSize},value:chosenSize"></select>
+			</div>
+			
+		</div>
+		<div class="row">
+			<h6>Applied Filters</h6>
+			<span data-bind="text:chosenType,style:{'border':(chosenType())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:chosenType(),click:DeselectType,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:chosenRating,style:{'border':(chosenRating())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:chosenRating(),click:DeselectRating,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:chosenDiameter,style:{'border':(chosenDiameter())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:chosenDiameter(),click:DeselectDiameter,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:chosenBrand,style:{'border':(chosenBrand())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:chosenBrand(),click:DeselectBrand,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:chosenSize,style:{'border':(chosenSize())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:chosenSize(),click:DeselectSize,style:{'cursor':'pointer'}">x</span>
+		</div>
+		<div class="title">
+				<h6>Sort By</h6>
+		</div>
+		<div class="row">
+			<select data-bind="options:dropdownSort,optionsCaption:'Sort: Top Sellers',event:{change:showSort},value:sorting"></select>
+		</div>
+	</div>
+	<div id="product"> 
+		<!-- ko if:(!chosenType()&&(searchedInput()=='Wire Terminals - Ring & Fork')||!searchedInput()) -->
+		<ul data-bind="foreach:{data:allProduct,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(!chosenType()&&searchedInput()) -->
+		<ul data-bind="foreach:{data:thissearchedInput,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Block')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisBlock,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Standard')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisStandard,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Insulated')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Non-Insulated')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisNonInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Locking')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisLocking,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Metallic')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisMetallic,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		
+		<!-- ko if:(
+			(chosenType()=='Block')&&
+			(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+			(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+			(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')) -->
+		<ul data-bind="foreach:{data:thisDiameter017ODBlock,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		
+		<!-- ko if:(
+			(chosenType()=='Block')&&
+			(chosenRating()=='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt1000SignsBlock,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Block')&&
+			(chosenRating()=='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt2000Block,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Block')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()=='600 Volt')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600Block,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Block')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()=='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600BuildingBlock,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Standard')&&
+			(chosenRating()=='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt1000SignsStandard,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Standard')&&
+			(chosenRating()=='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt2000Standard,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Standard')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()=='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600Standard,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Standard')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()=='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600BuildingStandard,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Insulated')&&
+			(chosenRating()=='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt1000SignsInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Insulated')&&
+			(chosenRating()=='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt2000Insulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Insulated')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()=='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600Insulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Insulated')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()=='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600BuildingInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Non-Insulated')&&
+			(chosenRating()=='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt1000SignsNonInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Non-Insulated')&&
+			(chosenRating()=='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt2000NonInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Non-Insulated')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()=='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600NonInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Non-Insulated')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()=='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600BuildingNonInsulated,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Locking')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()=='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt1000SignsLocking,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Locking')&&
+			(chosenRating()=='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt2000Locking,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Locking')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()=='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600Locking,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Locking')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()=='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600BuildingLocking,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Metallic')&&
+			(chosenRating()=='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt1000SignsMetallic,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Metallic')&&
+			(chosenRating()=='2000 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt2000Metallic,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Metallic')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()=='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()!='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600Metallic,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+			(chosenType()=='Metallic')&&
+			(chosenRating()!='2000 Volt')&&
+			(chosenRating()!='600 Volt')&&
+			(chosenRating()!='1000 Volt(Signs/Fixture)')&&
+			(chosenRating()=='600 Volt(Building Wiring)')) -->
+		<ul data-bind="foreach:{data:thisVolt600BuildingMetallic,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+		<!-- ko if:(
+((
+(chosenType()=='Block')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()=='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Block')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Block')&&
+(chosenDiameter()=='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+))||
+
+((
+(chosenType()=='Standard')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()=='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Standard')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Standard')&&
+(chosenDiameter()=='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+))||
+
+((
+(chosenType()=='Insulated')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()=='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Insulated')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Insulated')&&
+(chosenDiameter()=='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+))||
+
+((
+(chosenType()=='NonInsulated')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()=='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='NonInsulated')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='NonInsulated')&&
+(chosenDiameter()=='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+))||
+
+((
+(chosenType()=='Locking')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()=='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Locking')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Locking')&&
+(chosenDiameter()=='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+))||
+
+((
+(chosenType()=='Metallic')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()=='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Metallic')&&
+(chosenDiameter()!='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()=='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+)||
+(
+(chosenType()=='Metallic')&&
+(chosenDiameter()=='0.07 Inch ID x 0.0145 Inch OD')&&
+(chosenDiameter()!='0.09 Inch ID x 0.017 Inch OD')&&
+(chosenDiameter()!='0.135 Inch ID x 0.25 Inch OD')&&
+(chosenSize()=='#10')
+))
+) -->
+		<ul data-bind="foreach:{data:thisSizing,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<img data-bind="attr:{src:products.Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:products.Name"></p>
+
+			</li>
+<div><span>SKU  </span><span data-bind="text:products.Sku"></span></div>
+		</ul>
+		<!-- /ko -->
+
+	</div>
+		<script src="datas.js"></script> 
+</body>
+</html>
