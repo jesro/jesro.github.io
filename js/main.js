@@ -121,6 +121,6 @@ var readyMade = document.getElementById('added');
 			tot.push(price);
 			
 			document.getElementById(j).querySelector(".marking").innerHTML=price;
-			document.getElementById(j).querySelector(".plp").children[0].href = "https://jesro.github.io/product.html?total="+sku+"&tot="+price;
+			document.getElementById(j).querySelector(".plp").children[0].href = "product.html?total="+sku+"&tot="+price;
 
 			}
