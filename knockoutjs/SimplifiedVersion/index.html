@@ -136,10 +136,12 @@ span{
 		
 <center>
 	       <div style="padding-left: 10px;">
+		       <a href="#" data-bind="click: Next">Next</a> 
+		       <a href="#" data-bind="click: Three ">3</a>
+		       <a href="#" data-bind="click: Two ">2</a>
+	      		<a href="#" data-bind="click: One ">1</a>
 	      		<a href="#" data-bind="click: Prev ">Prev</a>
-	      		<a href="#" data-bind="click: Prev ">1</a>
-	      		<a href="#" data-bind="click: Prev ">2</a>
-	      		<a href="#" data-bind="click: Next">Next</a> 
+	      		
 	      	</div> 
 </center>
 	</div>
@@ -847,7 +849,21 @@ span{
 				var currentPage = self.CurrentPage();
 				if(totalData >= 1 && currentPage < (Math.ceil(totalData/2))) self.CurrentPage(currentPage + 1);
 				//on last page
+				if(self.CurrentPage()==4){
+					self.write(false);
+				}
 			};
+			
+			self.One=function(){
+				self.CurrentPage(2);
+			}
+			self.Two=function(){
+				self.CurrentPage(3);
+			}
+			self.Three=function(){
+				self.CurrentPage(4);
+				self.write(!self.write());
+			}
 
 			self.Prev = function() {
 				var currentPage = self.CurrentPage();
