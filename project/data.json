@@ -1,0 +1,1056 @@
+{
+TrackingId: "eeb0b253-7e04-4851-9a9f-e5f82c8d291d",
+Success: true,
+Pagination: {
+NofPages: 9,
+MaxPerPage: 15,
+CurrentPage: 1,
+NofResults: 122,
+Items: [
+{
+Selected: false,
+IsDefault: true,
+PageSize: 12,
+Label: "12 per page"
+},
+{
+Selected: false,
+IsDefault: false,
+PageSize: 24,
+Label: "24 per page"
+},
+{
+Selected: false,
+IsDefault: false,
+PageSize: 48,
+Label: "48 per page"
+}
+]
+},
+Sorting: {
+Items: [
+{
+Selected: true,
+IsDefault: true,
+Value: "topsellers",
+Label: "Top Sellers"
+},
+{
+Selected: false,
+IsDefault: false,
+Value: "pricedesc",
+Label: "Price – High to Low"
+},
+{
+Selected: false,
+IsDefault: false,
+Value: "priceasc",
+Label: "Price – Low to High"
+}
+],
+Value: "topsellers"
+},
+Results: [
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-412-bag-twist-on-electrical-spring-connector-22-10-awg-tan-55690",
+price_sale: "+0000000000000000.0744",
+voltage_rating: "600 Volt",
+product_description: "3M Twist-on electrical spring connector in tan color, accommodates conductor of size 22 - 10 AWG. It has voltage rating of 600 Volts. Electrical spring connector features tan flame-retardant PVC construction with corrosion-resistant coating steel spring. Wider spring opening facilitates for quick and easy insertion of larger wires. It withstands temperature rating of 105 deg C. Twist-on electrical spring connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "55690",
+image: "https://assets.usesi.com/product-media/images/P55674.jpg",
+url_key: "3m-412-bag-twist-on-electrical-spring-connector-22-10-awg-tan-55690",
+brand_name: "3M",
+product_name: "3M 412-BAG Twist-On Electrical Spring Connector 22-10 AWG Tan",
+item_name: "Twist-On Electrical Spring Connector",
+rank_99: "+0000000000000319.0000",
+rank_01: "+0000000000000136.0000",
+rank_02: "+0000000000000175.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000000611.0000",
+rank_2a: "+0000000000000337.0000",
+rank_3m: "+0000000000004632.0000",
+rank_3y: "+0000000000017174.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "412-BAG|^|412 BAG|^|412BAG",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "55674"
+},
+SKU: "55690",
+BestFragment: "3M Twist-on electrical spring connector in tan color, accommodates conductor of size 22 - 10 AWG. It has voltage rating of 600 Volts. Electrical spring connector features tan flame-retardant PVC construction with corrosion-resistant coating steel spring. Wider spring opening facilitates for quick an",
+SalePrice: "+0000000000000000.0744",
+Price: "+0000000000000000.0744",
+CustomURL: "/3m-412-bag-twist-on-electrical-spring-connector-22-10-awg-tan-55690",
+Id: "55690",
+ItemName: "3M 412-BAG Twist-On Electrical Spring Connector 22-10 AWG Tan"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-t-r-jug-performance-plus-twist-on-wire-connector-22-8-awg-tan-red-13653",
+price_sale: "+0000000000000000.1135",
+voltage_rating: "600 Volt",
+product_description: "3M Performance plus twist-on wire connector accommodates 22 - 8 AWG conductors. Connector in tan/red color, features steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.17 Inch x 0.76 Inch. It has V-2 flammability rating per UL94 to withstand harsh environmental conditions. It withstands temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "13653",
+image: "https://assets.usesi.com/product-media/images/P40386.jpg",
+url_key: "3m-t-r-jug-performance-plus-twist-on-wire-connector-22-8-awg-tan-red-13653",
+type: "Performance-Plus",
+brand_name: "3M",
+product_name: "3M T/R+JUG Performance-Plus Twist On Wire Connector 22-8 AWG Tan/Red",
+dimensions: "1.17 Inch Length x 0.76 Inch Width",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000000338.0000",
+rank_01: "+0000000000000339.0000",
+rank_02: "+0000000000000223.0000",
+rank_05: "+0000000000001452.0000",
+rank_04: "+0000000000000584.0000",
+rank_11: "+0000000000000559.0000",
+rank_2a: "+0000000000000348.0000",
+rank_3m: "+0000000000001333.0000",
+rank_3y: "+0000000000005575.0000",
+rank_70: "+0000000000001562.0000",
+manufacturer_part_number_searchable: "T/R+JUG|^|T R+JUG|^|TR+JUG|^|T R JUG|^|TRJUG",
+brand_name_search: "3M",
+crosssell: "182417|^|56390|^|67126|^|71702",
+substitute_functional_alternativ: "14680,14688,40386"
+},
+SKU: "13653",
+BestFragment: "3M Performance plus twist-on wire connector accommodates 22 - 8 AWG conductors. Connector in tan/red color, features steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.17 Inch x 0.76 Inch. It has V-2 flammab",
+SalePrice: "+0000000000000000.1135",
+Price: "+0000000000000000.1135",
+CustomURL: "/3m-t-r-jug-performance-plus-twist-on-wire-connector-22-8-awg-tan-red-13653",
+Id: "13653",
+ItemName: "3M T/R+JUG Performance-Plus Twist On Wire Connector 22-8 AWG Tan/Red"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-o-b-jug-performance-plus-twist-on-wire-connector-22-12-awg-orange-blue-14670",
+price_sale: "+0000000000000000.0855",
+voltage_rating: "600 Volt",
+product_description: "3M Performance plus twist-on wire connector accommodates 22 - 12 AWG conductors. Connector in orange/blue color, has steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.03 Inch x 0.49 Inch. It has V-2 flammability rating per UL94 to withstand harsh environmental conditions. It withstands temperature rating of 105 deg C. Connector is UL listed, CE/IEC/CSA certified and RoHS compliant.",
+unique_id: "14670",
+image: "https://assets.usesi.com/product-media/images/P14664.jpg",
+url_key: "3m-o-b-jug-performance-plus-twist-on-wire-connector-22-12-awg-orange-blue-14670",
+type: "Performance-Plus",
+brand_name: "3M",
+product_name: "3M O/B+JUG Performance-Plus Twist On Wire Connector 22-12 AWG Orange/Blue",
+dimensions: "1.03 Inch Length x 0.49 Inch Width",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000000152.0000",
+rank_01: "+0000000000000424.0000",
+rank_02: "+0000000000000360.0000",
+rank_05: "+0000000000000726.0000",
+rank_04: "+0000000000000172.0000",
+rank_11: "+0000000000000121.0000",
+rank_2a: "+0000000000000579.0000",
+rank_3m: "+0000000000000068.0000",
+rank_3y: "+0000000000003243.0000",
+rank_70: "+0000000000001886.0000",
+manufacturer_part_number_searchable: "O/B+JUG|^|O B+JUG|^|OB+JUG|^|O B JUG|^|OBJUG",
+brand_name_search: "3M",
+crosssell: "182417|^|56390|^|67126|^|71702",
+substitute_functional_alternativ: "13665,14664,55685"
+},
+SKU: "14670",
+BestFragment: "3M Performance plus twist-on wire connector accommodates 22 - 12 AWG conductors. Connector in orange/blue color, has steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.03 Inch x 0.49 Inch. It has V-2 flammab",
+SalePrice: "+0000000000000000.0855",
+Price: "+0000000000000000.0855",
+CustomURL: "/3m-o-b-jug-performance-plus-twist-on-wire-connector-22-12-awg-orange-blue-14670",
+Id: "14670",
+ItemName: "3M O/B+JUG Performance-Plus Twist On Wire Connector 22-12 AWG Orange/Blue"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-b-g-box-performance-plus-twist-on-wire-connector-14-6-awg-blue-gray-14645",
+price_sale: "+0000000000000000.3707",
+voltage_rating: "600 Volt",
+product_description: "3M Performance-Plus twist-on wire connector in blue/gray color, accommodates conductor of size 14 - 6 AWG. It has voltage rating of 600 Volts. Connector features flame-retardant polypropylene and thermoplastic elastomer construction with corrosion-resistant coating steel spring. It withstands temperature rating of 105 deg C. Twist-on wire connector is UL listed, CSA/CE certified, RoHS compliant and meets IEC standards.",
+unique_id: "14645",
+image: "https://assets.usesi.com/product-media/images/P14645.jpg",
+url_key: "3m-b-g-box-performance-plus-twist-on-wire-connector-14-6-awg-blue-gray-14645",
+type: "Performance-Plus",
+brand_name: "3M",
+product_name: "3M B/G+BOX Performance-Plus Twist-On Wire Connector 14-6 AWG Blue/Gray",
+item_name: "Twist-On Wire Connector",
+rank_99: "+0000000000001128.0000",
+rank_01: "+0000000000000653.0000",
+rank_02: "+0000000000001686.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000004110.0000",
+rank_11: "+0000000000000460.0000",
+rank_2a: "+0000000000003022.0000",
+rank_3m: "+0000000000000712.0000",
+rank_3y: "+0000000000009354.0000",
+rank_70: "+0000000000009155.0000",
+manufacturer_part_number_searchable: "B/G+BOX|^|B G+BOX|^|BG+BOX|^|B G BOX|^|BGBOX",
+brand_name_search: "3M",
+crosssell: "182417|^|56390|^|67126|^|71702",
+substitute_functional_alternativ: "14655"
+},
+SKU: "14645",
+BestFragment: "3M Performance-Plus twist-on wire connector in blue/gray color, accommodates conductor of size 14 - 6 AWG. It has voltage rating of 600 Volts. Connector features flame-retardant polypropylene and thermoplastic elastomer construction with corrosion-resistant coating steel spring. It withstands temper",
+SalePrice: "+0000000000000000.3707",
+Price: "+0000000000000000.3707",
+CustomURL: "/3m-b-g-box-performance-plus-twist-on-wire-connector-14-6-awg-blue-gray-14645",
+Id: "14645",
+ItemName: "3M B/G+BOX Performance-Plus Twist-On Wire Connector 14-6 AWG Blue/Gray"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-h-30-box-twist-on-wire-connector-22-16-awg-blue-highland-trade-63443",
+price_sale: "+0000000000000000.0890",
+voltage_rating: "300 Volt",
+product_description: "3M Highland™ Twist-on wire connector accommodates 22 - 16 AWG conductors. Connector in blue color, features plated steel spring construction and vinyl insulation. It withstands voltage rating of 300 Volts and temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "63443",
+image: "https://assets.usesi.com/product-media/images/P63443.jpg",
+url_key: "3m-h-30-box-twist-on-wire-connector-22-16-awg-blue-highland-trade-63443",
+brand_name: "3M",
+product_name: "3M H-30-BOX Twist On Wire Connector 22-16 AWG Blue Highland&trade;",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000002126.0000",
+rank_01: "+0000000000000784.0000",
+rank_02: "+0000000000002374.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000000676.0000",
+rank_2a: "+0000000000007910.0000",
+rank_3m: "+0000000000014637.0000",
+rank_3y: "+0000000000021822.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "H-30-BOX|^|H 30 BOX|^|H30BOX",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "63452"
+},
+SKU: "63443",
+BestFragment: "3M Highland™ Twist-on wire connector accommodates 22 - 16 AWG conductors. Connector in blue color, features plated steel spring construction and vinyl insulation. It withstands voltage rating of 300 Volts and temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+SalePrice: "+0000000000000000.0890",
+Price: "+0000000000000000.0890",
+CustomURL: "/3m-h-30-box-twist-on-wire-connector-22-16-awg-blue-highland-trade-63443",
+Id: "63443",
+ItemName: "3M H-30-BOX Twist On Wire Connector 22-16 AWG Blue Highland&trade;"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-412-box-twist-on-electrical-spring-connector-22-10-awg-tan-55674",
+price_sale: "+0000000000000000.0933",
+voltage_rating: "600 Volt",
+product_description: "3M Twist-on electrical spring connector in tan color, accommodates conductor of size 22 - 10 AWG. It has voltage rating of 600 Volts. Electrical spring connector features tan flame-retardant PVC construction with corrosion-resistant coating steel spring. Wider spring opening allows for quick and easy insertion of larger wires. It withstands temperature rating of 105 deg C. Twist-on electrical spring connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "55674",
+image: "https://assets.usesi.com/product-media/images/P55674.jpg",
+url_key: "3m-412-box-twist-on-electrical-spring-connector-22-10-awg-tan-55674",
+brand_name: "3M",
+product_name: "3M 412-BOX Twist-On Electrical Spring Connector 22-10 AWG Tan",
+item_name: "Twist-On Electrical Spring Connector",
+rank_99: "+0000000000002587.0000",
+rank_01: "+0000000000000819.0000",
+rank_02: "+0000000000002587.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000001591.0000",
+rank_2a: "+0000000000002151.0000",
+rank_3m: "+0000000000019537.0000",
+rank_3y: "+0000000000022234.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "412-BOX|^|412 BOX|^|412BOX",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "55690"
+},
+SKU: "55674",
+BestFragment: "3M Twist-on electrical spring connector in tan color, accommodates conductor of size 22 - 10 AWG. It has voltage rating of 600 Volts. Electrical spring connector features tan flame-retardant PVC construction with corrosion-resistant coating steel spring. Wider spring opening allows for quick and eas",
+SalePrice: "+0000000000000000.0933",
+Price: "+0000000000000000.0933",
+CustomURL: "/3m-412-box-twist-on-electrical-spring-connector-22-10-awg-tan-55674",
+Id: "55674",
+ItemName: "3M 412-BOX Twist-On Electrical Spring Connector 22-10 AWG Tan"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-h-31-box-straight-twist-on-wire-connector-18-14-awg-orange-highland-trade-63427",
+price_sale: "+0000000000000000.1083",
+voltage_rating: "600 Volt",
+product_description: "3M Highland™ Straight twist-on wire connector in orange, accommodates 18 -14 AWG conductors. Connector in orange color, features plated steel spring construction and vinyl insulation. It withstands voltage rating of 600 Volts. Incorporated spring mechanism spins quickly while tightening easily. It withstands temperature rating 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "63427",
+image: "https://assets.usesi.com/product-media/images/P63435.jpg",
+url_key: "3m-h-31-box-straight-twist-on-wire-connector-18-14-awg-orange-highland-trade-63427",
+type: "Straight",
+brand_name: "3M",
+product_name: "3M H-31-BOX Straight Twist On Wire Connector 18-14 AWG Orange Highland&trade;",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000002108.0000",
+rank_01: "+0000000000000926.0000",
+rank_02: "+0000000000002273.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000000601.0000",
+rank_2a: "+0000000000005004.0000",
+rank_3m: "+0000000000018539.0000",
+rank_3y: "+0000000000022234.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "H-31-BOX|^|H 31 BOX|^|H31BOX",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "63435"
+},
+SKU: "63427",
+BestFragment: "3M Highland™ Straight twist-on wire connector in orange, accommodates 18 -14 AWG conductors. Connector in orange color, features plated steel spring construction and vinyl insulation. It withstands voltage rating of 600 Volts. Incorporated spring mechanism spins quickly while tightening easily. It w",
+SalePrice: "+0000000000000000.1083",
+Price: "+0000000000000000.1083",
+CustomURL: "/3m-h-31-box-straight-twist-on-wire-connector-18-14-awg-orange-highland-trade-63427",
+Id: "63427",
+ItemName: "3M H-31-BOX Straight Twist On Wire Connector 18-14 AWG Orange Highland&trade;"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-t-y-jug-performance-plus-twist-on-wire-connector-22-12-awg-tan-yellow-13665",
+price_sale: "+0000000000000000.0833",
+voltage_rating: "600 Volt",
+product_description: "3M Performance plus twist-on wire connector accommodates 22 - 12 AWG conductors. Connector in tan/yellow color, features steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.03 Inch x 0.49 Inch. It has V-2 flammability rating per UL94 to withstand harsh environmental conditions. It withstands temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "13665",
+image: "https://assets.usesi.com/product-media/images/P55685.jpg",
+url_key: "3m-t-y-jug-performance-plus-twist-on-wire-connector-22-12-awg-tan-yellow-13665",
+type: "Performance-Plus",
+brand_name: "3M",
+product_name: "3M T/Y+JUG Performance-Plus Twist On Wire Connector 22-12 AWG Tan/Yellow",
+dimensions: "1.03 Inch Length x 0.49 Inch Width",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000001385.0000",
+rank_01: "+0000000000000982.0000",
+rank_02: "+0000000000001268.0000",
+rank_05: "+0000000000005751.0000",
+rank_04: "+0000000000003728.0000",
+rank_11: "+0000000000000787.0000",
+rank_2a: "+0000000000001827.0000",
+rank_3m: "+0000000000001114.0000",
+rank_3y: "+0000000000011888.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "T/Y+JUG|^|T Y+JUG|^|TY+JUG|^|T Y JUG|^|TYJUG",
+brand_name_search: "3M",
+crosssell: "182417|^|56390|^|67126|^|71702",
+substitute_functional_alternativ: "14664,14670,55685"
+},
+SKU: "13665",
+BestFragment: "3M Performance plus twist-on wire connector accommodates 22 - 12 AWG conductors. Connector in tan/yellow color, features steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.03 Inch x 0.49 Inch. It has V-2 fla",
+SalePrice: "+0000000000000000.0833",
+Price: "+0000000000000000.0833",
+CustomURL: "/3m-t-y-jug-performance-plus-twist-on-wire-connector-22-12-awg-tan-yellow-13665",
+Id: "13665",
+ItemName: "3M T/Y+JUG Performance-Plus Twist On Wire Connector 22-12 AWG Tan/Yellow"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-t-r-box-performance-plus-twist-on-wire-connector-22-8-awg-tan-red-40386",
+price_sale: "+0000000000000000.1628",
+voltage_rating: "600 Volt",
+product_description: "3M Performance plus twist-on wire connector accommodates 22 - 8 AWG conductors. Connector in tan/red color, has steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.17 Inch x 0.76 Inch. It has V-2 flammability rating per UL94 to withstand harsh environmental conditions. It withstands temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "40386",
+image: "https://assets.usesi.com/product-media/images/P40386.jpg",
+url_key: "3m-t-r-box-performance-plus-twist-on-wire-connector-22-8-awg-tan-red-40386",
+type: "Performance-Plus",
+brand_name: "3M",
+product_name: "3M T/R+BOX Performance-Plus Twist On Wire Connector 22-8 AWG Tan/Red",
+dimensions: "1.17 Inch Length x 0.76 Inch Width",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000002043.0000",
+rank_01: "+0000000000000992.0000",
+rank_02: "+0000000000001677.0000",
+rank_05: "+0000000000009695.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000000816.0000",
+rank_2a: "+0000000000003588.0000",
+rank_3m: "+0000000000005967.0000",
+rank_3y: "+0000000000020230.0000",
+rank_70: "+0000000000028928.0000",
+manufacturer_part_number_searchable: "T/R+BOX|^|T R+BOX|^|TR+BOX|^|T R BOX|^|TRBOX",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "13653,14680,14688"
+},
+SKU: "40386",
+BestFragment: "3M Performance plus twist-on wire connector accommodates 22 - 8 AWG conductors. Connector in tan/red color, has steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.17 Inch x 0.76 Inch. It has V-2 flammability",
+SalePrice: "+0000000000000000.1628",
+Price: "+0000000000000000.1628",
+CustomURL: "/3m-t-r-box-performance-plus-twist-on-wire-connector-22-8-awg-tan-red-40386",
+Id: "40386",
+ItemName: "3M T/R+BOX Performance-Plus Twist On Wire Connector 22-8 AWG Tan/Red"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/ideal-industries-30-641-wire-connector-22-8-awg-tan-twister-reg-341-trade-19242",
+price_sale: "+0000000000000000.1262",
+voltage_rating: "600 Volt",
+product_description: "Ideal Industries Twister® 341™ Wire connector in tan color, accommodates conductor of size 22 - 8 AWG. It has voltage rating of 600 Volts. Wire connector features polypropylene housing with zinc plating steel insert. It measures 0.54 Inch Dia x 0.72 Inch x 1.14 Inch. Expanding square wire spring of connector supports a wide range of common wiring configurations. Durable copolymer shell expands for smooth and progressive tightening for providing dependable connections. This wire connector has strip length of 1/2 Inch. It withstands temperature rating of 105 deg C. Wire connector is UL listed, CSA certified and meets IEC standards.",
+unique_id: "19242",
+image: "https://assets.usesi.com/product-media/images/P18940.jpg",
+url_key: "ideal-industries-30-641-wire-connector-22-8-awg-tan-twister-reg-341-trade-19242",
+brand_name: "Ideal Industries",
+product_name: "Ideal Industries 30-641 Wire Connector 22-8 AWG Tan Twister&reg; 341&trade;",
+dimensions: "0.54 Inch Dia x 1.14 Inch Length x 0.72 Inch Width",
+item_name: "Wire Connector",
+rank_99: "+0000000000000285.0000",
+rank_01: "+0000000000001117.0000",
+rank_02: "+0000000000000288.0000",
+rank_05: "+0000000000000568.0000",
+rank_04: "+0000000000000258.0000",
+rank_11: "+0000000000002658.0000",
+rank_2a: "+0000000000000222.0000",
+rank_3m: "+0000000000001223.0000",
+rank_3y: "+0000000000000155.0000",
+rank_70: "+0000000000000055.0000",
+manufacturer_part_number_searchable: "30-641|^|30 641|^|30641",
+brand_name_search: "Ideal Industries",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "18940,19122,274110,97313"
+},
+SKU: "19242",
+BestFragment: "Ideal Industries Twister® 341™ Wire connector in tan color, accommodates conductor of size 22 - 8 AWG. It has voltage rating of 600 Volts. Wire connector features polypropylene housing with zinc plating steel insert. It measures 0.54 Inch Dia x 0.72 Inch x 1.14 Inch. Expanding square wire spring of ",
+SalePrice: "+0000000000000000.1262",
+Price: "+0000000000000000.1262",
+CustomURL: "/ideal-industries-30-641-wire-connector-22-8-awg-tan-twister-reg-341-trade-19242",
+Id: "19242",
+ItemName: "Ideal Industries 30-641 Wire Connector 22-8 AWG Tan Twister&reg; 341&trade;"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-512g-pouch-twist-on-wire-grounding-connector-14-10-awg-green-56476",
+price_sale: "+0000000000000000.2270",
+voltage_rating: "600 Volt",
+product_description: "3M Twist on wire grounding connector accommodates 14 - 10 AWG conductors. Connector in green color, has steel spring construction and nylon insulation. It withstands voltage rating of 600 Volts. Connector measures 1.23 Inch x 0.89 Inch. It is flammability rated to withstand harsh environmental conditions. It withstands temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "56476",
+image: "https://assets.usesi.com/product-media/images/P56476.jpg",
+url_key: "3m-512g-pouch-twist-on-wire-grounding-connector-14-10-awg-green-56476",
+brand_name: "3M",
+product_name: "3M 512G-POUCH Twist On Wire Grounding Connector 14-10 AWG Green",
+dimensions: "1.23 Inch Length x 0.89 Inch Width",
+item_name: "Twist On Wire Grounding Connector",
+rank_99: "+0000000000002151.0000",
+rank_01: "+0000000000001133.0000",
+rank_02: "+0000000000002670.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000000466.0000",
+rank_2a: "+0000000000005086.0000",
+rank_3m: "+0000000000019537.0000",
+rank_3y: "+0000000000022234.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "512G-POUCH|^|512G POUCH|^|512GPOUCH",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "63620"
+},
+SKU: "56476",
+BestFragment: "3M Twist on wire grounding connector accommodates 14 - 10 AWG conductors. Connector in green color, has steel spring construction and nylon insulation. It withstands voltage rating of 600 Volts. Connector measures 1.23 Inch x 0.89 Inch. It is flammability rated to withstand harsh environmental condi",
+SalePrice: "+0000000000000000.2270",
+Price: "+0000000000000000.2270",
+CustomURL: "/3m-512g-pouch-twist-on-wire-grounding-connector-14-10-awg-green-56476",
+Id: "56476",
+ItemName: "3M 512G-POUCH Twist On Wire Grounding Connector 14-10 AWG Green"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-r-y-jug-performance-plus-twist-on-wire-connector-22-8-awg-red-yellow-14688",
+price_sale: "+0000000000000000.1205",
+voltage_rating: "600 Volt",
+product_description: "3M Performance plus twist-on wire connector accommodates 22 - 8 AWG conductors. Connector in red/yellow color, features steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.43 Inch x 0.76 Inch. It has V-2 flammability rating per UL94 to withstand harsh environmental conditions. It withstands temperature rating of 105 deg C. Connector is UL listed, CE/IEC/CSA certified and RoHS compliant.",
+unique_id: "14688",
+image: "https://assets.usesi.com/product-media/images/P14680.jpg",
+url_key: "3m-r-y-jug-performance-plus-twist-on-wire-connector-22-8-awg-red-yellow-14688",
+type: "Performance-Plus",
+brand_name: "3M",
+product_name: "3M R/Y+JUG Performance-Plus Twist On Wire Connector 22-8 AWG Red/Yellow",
+dimensions: "1.43 Inch Length x 0.76 Inch Width",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000000086.0000",
+rank_01: "+0000000000001138.0000",
+rank_02: "+0000000000002185.0000",
+rank_05: "+0000000000000228.0000",
+rank_04: "+0000000000000033.0000",
+rank_11: "+0000000000000133.0000",
+rank_2a: "+0000000000001838.0000",
+rank_3m: "+0000000000000015.0000",
+rank_3y: "+0000000000001102.0000",
+rank_70: "+0000000000001532.0000",
+manufacturer_part_number_searchable: "R/Y+JUG|^|R Y+JUG|^|RY+JUG|^|R Y JUG|^|RYJUG",
+brand_name_search: "3M",
+crosssell: "182417|^|56390|^|67126|^|71702",
+substitute_functional_alternativ: "13653,14680,40386"
+},
+SKU: "14688",
+BestFragment: "3M Performance plus twist-on wire connector accommodates 22 - 8 AWG conductors. Connector in red/yellow color, features steel spring construction and polypropylene/thermoplastic elastomer insulation. It withstands voltage rating of 600 Volts. Connector measures 1.43 Inch x 0.76 Inch. It has V-2 flam",
+SalePrice: "+0000000000000000.1205",
+Price: "+0000000000000000.1205",
+CustomURL: "/3m-r-y-jug-performance-plus-twist-on-wire-connector-22-8-awg-red-yellow-14688",
+Id: "14688",
+ItemName: "3M R/Y+JUG Performance-Plus Twist On Wire Connector 22-8 AWG Red/Yellow"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-h-35-bag-twist-on-wire-connector-18-10-awg-red-highland-trade-63481",
+price_sale: "+0000000000000000.1010",
+voltage_rating: "600 Volt",
+product_description: "3M Highland™ Twist-on wire connector accommodates 18 -10 AWG conductors. Connector in red color, has plated steel spring construction and vinyl insulation. It withstands voltage rating of 600 Volts and temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "63481",
+image: "https://assets.usesi.com/product-media/images/P63481.jpg",
+url_key: "3m-h-35-bag-twist-on-wire-connector-18-10-awg-red-highland-trade-63481",
+brand_name: "3M",
+product_name: "3M H-35-BAG Twist On Wire Connector 18-10 AWG Red Highland&trade;",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000004142.0000",
+rank_01: "+0000000000001174.0000",
+rank_02: "+0000000000010700.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000001252.0000",
+rank_2a: "+0000000000018676.0000",
+rank_3m: "+0000000000019537.0000",
+rank_3y: "+0000000000022234.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "H-35-BAG|^|H 35 BAG|^|H35BAG",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "63474"
+},
+SKU: "63481",
+BestFragment: "3M Highland™ Twist-on wire connector accommodates 18 -10 AWG conductors. Connector in red color, has plated steel spring construction and vinyl insulation. It withstands voltage rating of 600 Volts and temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+SalePrice: "+0000000000000000.1010",
+Price: "+0000000000000000.1010",
+CustomURL: "/3m-h-35-bag-twist-on-wire-connector-18-10-awg-red-highland-trade-63481",
+Id: "63481",
+ItemName: "3M H-35-BAG Twist On Wire Connector 18-10 AWG Red Highland&trade;"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/3m-h-33-box-twist-on-wire-connector-18-12-awg-yellow-highland-trade-63459",
+price_sale: "+0000000000000000.1190",
+voltage_rating: "600 Volt",
+product_description: "3M Highland™ Twist-on wire connector accommodates 18 -12 AWG conductors. Connector in yellow color, features plated steel spring construction and vinyl insulation. It withstands voltage rating of 600 Volts and temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "63459",
+image: "https://assets.usesi.com/product-media/images/P63466.jpg",
+url_key: "3m-h-33-box-twist-on-wire-connector-18-12-awg-yellow-highland-trade-63459",
+brand_name: "3M",
+product_name: "3M H-33-BOX Twist On Wire Connector 18-12 AWG Yellow Highland&trade;",
+item_name: "Twist On Wire Connector",
+rank_99: "+0000000000003858.0000",
+rank_01: "+0000000000001459.0000",
+rank_02: "+0000000000006260.0000",
+rank_05: "+0000000000010673.0000",
+rank_04: "+0000000000021217.0000",
+rank_11: "+0000000000000954.0000",
+rank_2a: "+0000000000016525.0000",
+rank_3m: "+0000000000019537.0000",
+rank_3y: "+0000000000022234.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "H-33-BOX|^|H 33 BOX|^|H33BOX",
+brand_name_search: "3M",
+crosssell: "11660|^|121331|^|129971|^|56149",
+substitute_functional_alternativ: "63466"
+},
+SKU: "63459",
+BestFragment: "3M Highland™ Twist-on wire connector accommodates 18 -12 AWG conductors. Connector in yellow color, features plated steel spring construction and vinyl insulation. It withstands voltage rating of 600 Volts and temperature rating of 105 deg C. Connector is UL listed, CSA certified and RoHS compliant.",
+SalePrice: "+0000000000000000.1190",
+Price: "+0000000000000000.1190",
+CustomURL: "/3m-h-33-box-twist-on-wire-connector-18-12-awg-yellow-highland-trade-63459",
+Id: "63459",
+ItemName: "3M H-33-BOX Twist On Wire Connector 18-12 AWG Yellow Highland&trade;"
+},
+{
+IsOnSale: false,
+Score: 0.499999970197678,
+Custom: {
+url_detail: "/ideal-industries-30-276-wire-connector-18-6-awg-red-wire-nut-reg-76b-reg-19101",
+price_sale: "+0000000000000000.1440",
+voltage_rating: "600 Volt",
+product_description: "Ideal Industries Wire-Nut® 76B® Wire connector in red color, accommodates conductor of size 18 - 6 AWG. It has voltage rating of 600 Volts. Wire connector features polypropylene housing with zinc plating steel insert. Positive grip shell of connector is perfect to twist-on with fingers. Fixed square wire spring offers a grip that will last. It measures 0.59 Inch Dia x 1.06 Inch. This wire connector has strip length of 7/16 Inch (greater than or equal to 14 AWG) and 1/2 Inch (less than or equal to 16 AWG). It withstands temperature rating of 105 deg C. Wire connector is suitable for bonding as well grounding applications and has refined range to handle all common applications. Wire connector is UL listed, CSA certified and RoHS compliant.",
+unique_id: "19101",
+image: "https://assets.usesi.com/product-media/images/P19037.jpg",
+url_key: "ideal-industries-30-276-wire-connector-18-6-awg-red-wire-nut-reg-76b-reg-19101",
+brand_name: "Ideal Industries",
+product_name: "Ideal Industries 30-276 Wire Connector 18-6 AWG Red Wire-Nut&reg; 76B&reg;",
+dimensions: "0.59 Inch Dia x 1.06 Inch Length",
+item_name: "Wire Connector",
+rank_99: "+0000000000003319.0000",
+rank_01: "+0000000000001499.0000",
+rank_02: "+0000000000006800.0000",
+rank_05: "+0000000000009281.0000",
+rank_04: "+0000000000003649.0000",
+rank_11: "+0000000000004059.0000",
+rank_2a: "+0000000000001752.0000",
+rank_3m: "+0000000000002207.0000",
+rank_3y: "+0000000000002852.0000",
+rank_70: "+0000000000032143.0000",
+manufacturer_part_number_searchable: "30-276|^|30 276|^|30276",
+brand_name_search: "Ideal Industries",
+crosssell: "182417|^|56390|^|67126|^|71702",
+substitute_functional_alternativ: "19037"
+},
+SKU: "19101",
+BestFragment: "Ideal Industries Wire-Nut® 76B® Wire connector in red color, accommodates conductor of size 18 - 6 AWG. It has voltage rating of 600 Volts. Wire connector features polypropylene housing with zinc plating steel insert. Positive grip shell of connector is perfect to twist-on with fingers. Fixed square",
+SalePrice: "+0000000000000000.1440",
+Price: "+0000000000000000.1440",
+CustomURL: "/ideal-industries-30-276-wire-connector-18-6-awg-red-wire-nut-reg-76b-reg-19101",
+Id: "19101",
+ItemName: "Ideal Industries 30-276 Wire Connector 18-6 AWG Red Wire-Nut&reg; 76B&reg;"
+}
+],
+Facets: [
+{
+ShowSliderInputs: false,
+PreloadChildren: false,
+IsVisible: true,
+IsCollapsedDefault: false,
+IsCollapsible: true,
+AlwaysVisible: false,
+IsSearch: false,
+IsCurrency: false,
+IsNumeric: false,
+ExpandSelection: true,
+FacetRangeDisplayType: 0,
+Height: 150,
+NofVisible: 10,
+SortOrder: 9,
+SearchThreshold: 0,
+TruncateThreshold: 0,
+ScrollThreshold: 10,
+ScrollHeight: 150,
+MinHitCount: 1,
+MaxCount: 200,
+FacetId: 29945,
+Values: [
+{
+Count: 1,
+Value: "61 Model",
+Label: "61 Model"
+},
+{
+Count: 1,
+Value: "Closed End",
+Label: "Closed End"
+},
+{
+Count: 1,
+Value: "Combination Pail",
+Label: "Combination Pail"
+},
+{
+Count: 1,
+Value: "High Heat",
+Label: "High Heat"
+},
+{
+Count: 3,
+Value: "High Temperature",
+Label: "High Temperature"
+},
+{
+Count: 1,
+Value: "High-Temperature",
+Label: "High-Temperature"
+},
+{
+Count: 1,
+Value: "King 9",
+Label: "King 9"
+},
+{
+Count: 1,
+Value: "Large",
+Label: "Large"
+},
+{
+Count: 1,
+Value: "Medium",
+Label: "Medium"
+},
+{
+Count: 1,
+Value: "Model 11",
+Label: "Model 11"
+},
+{
+Count: 1,
+Value: "Model 22",
+Label: "Model 22"
+},
+{
+Count: 4,
+Value: "Model 65",
+Label: "Model 65"
+},
+{
+Count: 1,
+Value: "Multi Pail",
+Label: "Multi Pail"
+},
+{
+Count: 10,
+Value: "Performance-Plus",
+Label: "Performance-Plus"
+},
+{
+Count: 1,
+Value: "Standard",
+Label: "Standard"
+},
+{
+Count: 2,
+Value: "Straight",
+Label: "Straight"
+},
+{
+Count: 6,
+Value: "Waterproof",
+Label: "Waterproof"
+}
+],
+SortBy: "ScoreAndAlphaAndAlpha",
+ParamName: "type",
+DisplayType: "scrolling",
+FacetType: "checkbox",
+FieldType: "string",
+Field: "type",
+Name: "Type"
+},
+{
+ShowSliderInputs: false,
+PreloadChildren: false,
+IsVisible: true,
+IsCollapsedDefault: false,
+IsCollapsible: true,
+AlwaysVisible: true,
+IsSearch: false,
+IsCurrency: false,
+IsNumeric: false,
+ExpandSelection: true,
+FacetRangeDisplayType: 0,
+Height: 150,
+NofVisible: 10,
+SortOrder: 10,
+SearchThreshold: 0,
+TruncateThreshold: 0,
+ScrollThreshold: 10,
+ScrollHeight: 150,
+MinHitCount: 1,
+MaxCount: 200,
+FacetId: 29701,
+Values: [
+{
+Count: 27,
+Value: "3M",
+Label: "3M"
+},
+{
+Count: 75,
+Value: "Ideal Industries",
+Label: "Ideal Industries"
+},
+{
+Count: 6,
+Value: "King Innovation",
+Label: "King Innovation"
+},
+{
+Count: 8,
+Value: "NSI",
+Label: "NSI"
+},
+{
+Count: 3,
+Value: "Panduit",
+Label: "Panduit"
+},
+{
+Count: 2,
+Value: "Satco",
+Label: "Satco"
+},
+{
+Count: 1,
+Value: "Thomas & Betts",
+Label: "Thomas & Betts"
+}
+],
+SortBy: "ScoreAndAlphaAndAlpha",
+ParamName: "brand_name",
+DisplayType: "scrolling",
+FacetType: "checkbox",
+FieldType: "string",
+Field: "brand_name",
+Name: "Brand Name"
+},
+{
+ShowSliderInputs: false,
+PreloadChildren: false,
+IsVisible: true,
+IsCollapsedDefault: false,
+IsCollapsible: true,
+AlwaysVisible: false,
+IsSearch: false,
+IsCurrency: false,
+IsNumeric: false,
+ExpandSelection: true,
+FacetRangeDisplayType: 0,
+Height: 150,
+NofVisible: 10,
+SortOrder: 247,
+SearchThreshold: 0,
+TruncateThreshold: 0,
+ScrollThreshold: 10,
+ScrollHeight: 150,
+MinHitCount: 1,
+MaxCount: 200,
+FacetId: 29914,
+Values: [
+{
+Count: 8,
+Value: "B-CAP&reg;",
+Label: "B-CAP&reg;"
+},
+{
+Count: 1,
+Value: "B-CAP&reg; Green-B&reg;",
+Label: "B-CAP&reg; Green-B&reg;"
+},
+{
+Count: 1,
+Value: "BGR Green-B&reg;",
+Label: "BGR Green-B&reg;"
+},
+{
+Count: 1,
+Value: "B-Twist&trade;",
+Label: "B-Twist&trade;"
+},
+{
+Count: 6,
+Value: "DryConn&reg;",
+Label: "DryConn&reg;"
+},
+{
+Count: 8,
+Value: "Easy-Twist&trade;",
+Label: "Easy-Twist&trade;"
+},
+{
+Count: 8,
+Value: "Highland&trade;",
+Label: "Highland&trade;"
+},
+{
+Count: 1,
+Value: "Performance Plus&trade;",
+Label: "Performance Plus&trade;"
+},
+{
+Count: 1,
+Value: "Sta-Kon&reg;",
+Label: "Sta-Kon&reg;"
+},
+{
+Count: 4,
+Value: "Twister&reg;",
+Label: "Twister&reg;"
+},
+{
+Count: 2,
+Value: "Twister&reg; 340&trade;",
+Label: "Twister&reg; 340&trade;"
+},
+{
+Count: 5,
+Value: "Twister&reg; 341&trade;",
+Label: "Twister&reg; 341&trade;"
+},
+{
+Count: 2,
+Value: "Twister&reg; 342&trade;",
+Label: "Twister&reg; 342&trade;"
+},
+{
+Count: 3,
+Value: "Twister&reg; 344&trade;",
+Label: "Twister&reg; 344&trade;"
+},
+{
+Count: 2,
+Value: "UnderGround&reg; 60&reg;",
+Label: "UnderGround&reg; 60&reg;"
+},
+{
+Count: 1,
+Value: "UnderGround&reg; 60&reg;/64&reg;",
+Label: "UnderGround&reg; 60&reg;/64&reg;"
+},
+{
+Count: 1,
+Value: "UnderGround&reg; 64&reg;",
+Label: "UnderGround&reg; 64&reg;"
+},
+{
+Count: 1,
+Value: "UnderGround&reg; 66&reg;",
+Label: "UnderGround&reg; 66&reg;"
+},
+{
+Count: 1,
+Value: "WeatherProof&trade;",
+Label: "WeatherProof&trade;"
+},
+{
+Count: 1,
+Value: "WeatherProof&trade; 61&reg;",
+Label: "WeatherProof&trade; 61&reg;"
+},
+{
+Count: 1,
+Value: "WeatherProof&trade; 61&reg;/62&reg;",
+Label: "WeatherProof&trade; 61&reg;/62&reg;"
+},
+{
+Count: 3,
+Value: "WeatherProof&trade; 62&reg;",
+Label: "WeatherProof&trade; 62&reg;"
+},
+{
+Count: 2,
+Value: "WeatherProof&trade; 63&reg;",
+Label: "WeatherProof&trade; 63&reg;"
+},
+{
+Count: 3,
+Value: "Wing-Nut&reg; 451&reg;",
+Label: "Wing-Nut&reg; 451&reg;"
+},
+{
+Count: 4,
+Value: "Wing-Nut&reg; 452&reg;",
+Label: "Wing-Nut&reg; 452&reg;"
+},
+{
+Count: 2,
+Value: "Wing-Nut&reg; 454&reg;",
+Label: "Wing-Nut&reg; 454&reg;"
+},
+{
+Count: 2,
+Value: "Wing-Nut&reg; Greenie&reg; 92&reg;",
+Label: "Wing-Nut&reg; Greenie&reg; 92&reg;"
+},
+{
+Count: 8,
+Value: "WingTwist&trade;",
+Label: "WingTwist&trade;"
+},
+{
+Count: 1,
+Value: "Wire-Nut&reg; 59B&trade;",
+Label: "Wire-Nut&reg; 59B&trade;"
+},
+{
+Count: 2,
+Value: "Wire-Nut&reg; 71B&reg;",
+Label: "Wire-Nut&reg; 71B&reg;"
+},
+{
+Count: 3,
+Value: "Wire-Nut&reg; 72B&reg;",
+Label: "Wire-Nut&reg; 72B&reg;"
+},
+{
+Count: 4,
+Value: "Wire-Nut&reg; 73B&reg;",
+Label: "Wire-Nut&reg; 73B&reg;"
+},
+{
+Count: 3,
+Value: "Wire-Nut&reg; 74B&reg;",
+Label: "Wire-Nut&reg; 74B&reg;"
+},
+{
+Count: 2,
+Value: "Wire-Nut&reg; 76B&reg;",
+Label: "Wire-Nut&reg; 76B&reg;"
+}
+],
+SortBy: "ScoreAndAlphaAndAlpha",
+ParamName: "sub_brand",
+DisplayType: "scrolling",
+FacetType: "checkbox",
+FieldType: "string",
+Field: "sub_brand",
+Name: "Sub Brand"
+}
+],
+Selections: {
+category: {
+Items: [
+{
+Value: "3|Wiring Supplies/Crimp & Wire Connectors/Twist-On Wire Connectors",
+Label: "Twist-On Wire Connectors"
+}
+],
+Label: "Category"
+}
+},
+Merchandising: {
+Items: [ ]
+},
+FeaturedItems: {
+Items: [
+{
+Zone: "FeaturedTop"
+},
+{
+Zone: "FeaturedLeftTop"
+},
+{
+Zone: "FeaturedLeftBottom"
+},
+{
+Zone: "FeaturedBottom"
+},
+{
+Zone: "FeaturedBottom2"
+}
+]
+},
+Original: "",
+Keyword: "",
+RelCanonical: "",
+MetaKeywords: "",
+MetaDescription: "",
+TopText: "",
+HeaderTitle: "<title>Search Results</title>",
+MetaRobots: "<meta name="robots" content="noindex,nofollow" />",
+DidYouMean: "",
+Location: ""
+}
