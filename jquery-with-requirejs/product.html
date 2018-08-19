@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Products</title>
+  <link rel="stylesheet" href="modules/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<script data-main="libs/main" src="libs/require.js"></script>
+ </head>
+ <body>
+ 	<div class="container">
+ 		<div id="left">
+ 			<img data-bind="attr:{src:Image,href:Image},style:{'width':'100px','height':'100px'}">
+ 		</div> 
+ 		<div id="center">
+ 			<span id="title">
+ 				<h3 data-bind="text:name"></h3>
+ 			</span>
+ 			<span>
+ 				<h3>Sale : Rs <span data-bind="text:price"></span></h3>
+ 			</span>
+ 			<span id="sku">
+ 				<h2>SKU <span data-bind="text:sku"></span></h2>
+ 			</span>
+ 			<p>
+ 				3M Scotchlok™ Standard fork terminal in yellow color, accommodates wire of size 12 - 10 AWG. It features electro-tin-plated copper construction for good conductivity and corrosion resistance. It has 0.25-Inch Dia vinyl insulation. Terminal of length 1.03 inches, has brazed seam barrel of size 0.25 Inch. It withstands voltage rating of 600 Volts for building wiring and 1000 Volts for signs/fixture. Terminal has stud of size 10. Tang measures 0.38 inches x 0.04 Inch. It withstands temperature rating of -40 to 105 deg C. Fork terminal is UL listed, CSA certified and RoHS compliant.   
+				<button class="btn btn-primary" data-bind="click:open,text:opentext"></button>
+				<span data-bind="visible:opening">
+				Yellow vinyl-insulated, butted seam barrel ensures a secure fit and offers reliable performance
+				Funnel-designed, polyvinyl chloride sleeve offers easy insertion of wires
+				Wider-tongue design for use on freestanding studs</span>
+ 			</p>
+ 		</div>
+ 		<div>
+ 			<span>
+ 				<button class="btn btn-danger" >ADD To CART</button>
+ 				<button class="btn btn-success" >BUY NOW</button>
+ 			</span>
+ 		</div>
+ 	</div>
+ 	<script>
+    require(['main'],function(){
+      require(['url']);
+    });
+ 		
+ 	</script>
+  </body>
+ </html>
