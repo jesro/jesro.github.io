@@ -1,0 +1,45 @@
+ 	#left{
+ 		display: inline-block;
+ 		margin:40px 0px 30px 30px;
+ 		padding:10px;
+ 		float:left;
+ 		width:33%;
+ 	}
+ 	#price p{
+ 		color:red;
+ 	}
+ 	#money{
+		font-size: 20px;
+ 	}
+ 	#center{
+ 		display: inline-block;
+ 		margin:50px 20px;
+ 		float:center;
+ 		width:33%;
+ 		clear:both;
+ 	}
+ 	#para p{
+ 		line-height: 2.6;
+ 	}
+ 	#title{
+ 		font-family: "Amazon Ember",Arial,sans-serif;
+ 		line-height: 1.6;
+ 	}
+ 	#right{
+ 		display: inline-block;
+ 		margin:30px;
+ 		padding:10px;
+ 		width:15%;
+ 	}
+ 	#right button{
+ 		margin:10px 0;
+ 		padding:20px;
+ 		width:250px;
+ 		background: #f0c14b;
+    	border-color: #a88734 #9c7e31 #846a29;
+    	border-radius: 10px; 
+    	color: #111;
+ 	}
+ 	#sku{
+ 		color:green;
+ 	}

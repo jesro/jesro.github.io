@@ -1,0 +1,44 @@
+	ul li{
+  		display:inline-block;
+  		vertical-align: top;
+  		overflow: hidden;
+  		word-spacing: normal;
+  		letter-spacing: normal;	
+  		margin: 0;
+  		width:30%;
+  	}
+  	/* li img:hover{
+  		zoom:1.2;
+  	} */
+  	table{
+  		border-collapse: separate;
+    	border-spacing: 0 1em;
+  	}
+  	#whole{
+  		padding-right:0%;
+  	}
+  	#product{
+  		border-left: 1px solid gray;
+  	}
+#full{
+	min-height: 700px;
+}
+.pagination ul{
+	margin-left:500px;
+	display: inline-flex;
+	cursor: pointer;
+    
+}
+.pagination li {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+.pagination li.active {
+    background-color: #ddd;
+    color: white;
+}
+.pagination li:hover:not(.active) {background-color: #ddd;} 
