@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>US Electrical Services</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script data-main="libs/config" src="libs/require.js"></script>
+</head>
+<body class="panel panel-primary">
+<div class="container-fluid">
+	<div class="well">Customer Service: +1-866-662-3939</div>
+	<div class="form-group">
+	<span class="col-lg-2">US Electrical Services</span><span class="col-lg-10"><input type="text" class="form-control" data-bind="hasFocus: isSelected"placeholder="Search by keyword or part number"></span></div>
+	<nav class="navbar-brand">
+		<ul class="list-unstyled list-inline">
+			<li>About Us</li>
+			<li>Careers</li>
+			<li>Services</li>
+		</ul>
+	</nav><br>
+	<h3 class="col-lg-12"><span><a data-bind="attr:{href:'index.html'}">&#8962;</a></span> / <span>Lighting / Lamps,Bulbs and Drivers</span> / ←</h3>
+	<h2>LED Lamps and Bulbs</h2>
+	<div>
+	<span>Special Options</span>
+	<span>
+		<button class="btn-info">In My Lists</button>
+		<button class="btn-info">Purchased</button>
+		<button class="btn-info">Add Keywords</button>
+	</span>
+	</div>
+	<div>
+	<h5>Filter By</h5>
+	<span>
+	<ul class="list-unstyled list-group" data-bind="foreach:allProducts">
+		<li data-bind="foreach:Facets">
+			<select class="btn btn-default dropdown-toggle" data-bind="options:Values,optionsText:'Label',optionsCaption:Name,value:DropdownValue"></select>
+		</li>
+	</ul>
+	</span>
+	</div>
+	<div class="product">
+		<ul class="list-unstyled list-group" data-bind="foreach:allProducts">
+			<li class="list-group-item" data-bind="foreach:Results">
+				<p data-bind="text:Custom.product_name"></p>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<button class="btn btn-default btn-block">Load More Products</button>
+	</div>
+	<ul class="pager">
+	  <li><a href="#">Previous</a></li>
+	  <li><a href="#">Next</a></li>
+	</ul>
+	<footer class="panel-footer text-center">Copyrights 2019</footer>
+</div>
+	<script>
+		require(['config'],function(){
+			require(['main']);
+		});
+	</script>
+</body>
+</html>
