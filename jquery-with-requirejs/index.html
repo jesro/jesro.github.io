@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>							<!--apply pagination even in filter, multiselect,image in product.html-->
+	<meta charset="UTF-8">
+	<title>Knockoutjs Module</title>
+	<script data-main="libs/main" src="libs/require.js"></script>
+	<link rel="stylesheet" href="modules/styles.css">
+</head>
+<body>
+	<input type="text" size="30" data-bind="textInput:searchInput,hasFocus:focus,selected:focus" placeholder="Search by Keyword or part number"><br>
+
+ <span><h2>Searching: </h2><h2 data-bind="text:searchInput"></h2></span> 
+	<div id="wrapper">
+		<div class="title">
+				<h6>Filter By</h6>
+		</div>
+		<table>
+			<tbody>
+	            <tr>
+
+	            	<td>
+	                    <select data-bind='options: drop, optionsText: "dropdownValues", optionsCaption: "Type", value: newlist'> </select>
+	                </td>
+	                <td data-bind="with: newlist">
+	                    <select data-bind='options: Value, optionsText: "Values", optionsCaption: "Diameter", value: newanotherlist'> </select>
+	                </td>
+	                <td data-bind="with: newanotherlist">
+	                    <select data-bind='options: Jesro, optionsText: "Values", optionsCaption: "Size", value: secondnewanotherlist'> </select>
+	                </td>
+	                <td data-bind="with: secondnewanotherlist">
+	                    <select data-bind='options: Good, optionsText: "Values", optionsCaption: "Brand", value: thirdnewanotherlist'> </select>
+	                </td>
+	                
+	            </tr>
+	        </tbody>
+		</table>
+		<div class="row">
+			<h6>Applied Filters</h6>
+		<span data-bind="text:subtotal,style:{'border':(subtotal())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:subtotal(),click:newlist,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:subtota,style:{'border':(subtota())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:subtota(),click:newanotherlist,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:subtot,style:{'border':(subtot())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:subtot(),click:secondnewanotherlist,style:{'cursor':'pointer'}">x</span>
+			<span data-bind="text:subto,style:{'border':(subto())?'1px solid black':'','padding':'5px'}"></span>
+			<span data-bind="if:subto(),click:thirdnewanotherlist,style:{'cursor':'pointer'}">x</span>
+		</div>
+		
+		<div class="title">
+				<h6>Sort By</h6>
+				<div class="row">
+				<select data-bind="options:thirdOption,optionsCaption:'Sort By',value:sorting"></select>
+				</div>
+		</div>
+		
+
+	</div>
+<br><br><br><hr>
+	<div id="product">		
+		<ul data-bind="foreach:{data:thisFirst,as:'products'},style:{'list-style':'none'}">
+			<li data-bind="style:{'display':'inline-flex'}">
+				<a data-bind="attr:{href:href,target:'_blank'}"><img data-bind="attr:{src:Image},style:{'width':'100px','height':'100px'}">
+				<p data-bind="text:Name"></p></a>
+			</li>
+			<div><span>SKU  </span><span data-bind="text:Sku"></span>
+				<span data-bind="style:{'color':'red'}">Rs </span><span data-bind="text:Price"></span></div>
+		</ul>
+	</div>
+	
+	<div style="padding-left: 10px;text-align: center;" class="pagination">
+		<a href="#" data-bind="click: Prev ">Prev</a>
+		<a href="#" data-bind="click: One ">1</a>
+		<a href="#" data-bind="click: Two ">2</a>
+	    <a href="#" data-bind="click: Three ">3</a>
+	    <a href="#" data-bind="click: Next,visible:write">Next</a> 	
+	</div> 
+	<div class="scrollTop" data-bind="click:scrolltop"><span></span></div>
+	<script>
+	require(['main'],function(){
+		require(['bootstrap','fromjson']);
+	});
+	</script> 
+</body>
+</html>
