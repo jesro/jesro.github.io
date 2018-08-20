@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>US Electrical Services</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script data-main="libs/config" src="libs/require.js"></script>
+</head>
+<body class="panel panel-primary">
+<div class="container-fluid">
+	<div class="jumbotron">
+		<h1 class="text-center">Products</h1>
+	</div>
+	<div class="product">
+		<ul class="list-unstyled list-group" data-bind="foreach:allProducts">
+			<li class="list-group-item col-xs-12" data-bind="foreach:Results">
+				<a class="col-xs-10" data-bind="attr:{href:'product.html?'+Custom.url_key,target:'_blank'}"><p data-bind="text:Custom.product_name"></p></a>
+				<em class="col-xs-1" data-bind="text:SKU"></em>
+			</li>
+		</ul>
+	</div>
+	
+	<footer class="panel-footer text-center">Copyrights 2019</footer>
+</div>
+	<script>
+		require(['config'],function(){
+			require(['main']);
+		});
+	</script>
+</body>
+</html>
