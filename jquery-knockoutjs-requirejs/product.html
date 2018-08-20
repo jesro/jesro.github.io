@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>US Electrical Services</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick.css"/>
+		
+	<script data-main="libs/config" src="libs/require.js"></script>
+</head>
+<body class="panel panel-primary">
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="product">
+				<div class="col-xs-12">
+				<h3 data-bind="text:uName" class="text-success"></h3>
+				<p class="text-danger">SKU: <span data-bind="text:skuUrl"></span></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ol>
+					<li>quis nostrud exercitation ullamco laboris nisi ut aliquip.</li>
+					<li>sunt in culpa qui officia deserunt mollit anim id est.</li>
+					<li>velit esse cillum dolore eu fugiat nulla pariatur.</li>
+				</ol>
+				<div class="well">
+					<small>Call for availability</small><br>
+					<a href="#">View Stock in Nearby Branches</a>
+				</div>
+				<p><span class="col-xs-1">Qty</span>
+					<span class="inline-flex col-xs-3">
+						<button class="btn-small col-xs-1 text-center" data-bind="click:inc">+</button><input type="number" class="col-xs-4" data-bind="value:num"><button class="btn-small col-xs-1 text-center" data-bind="click:dec">-</button></span> 
+					<button class="btn-primary">Deliver</button>
+					<button class="btn-info">Pickup</button>
+				</p>
+				</div>
+		<div class="row float-right">
+			<h3>Recommended Products</h3>
+			<ul>
+				<li class="list-unstyled col-xs-2 col-md-2 col-lg-12 vcenter" data-bind="foreach:getProducts">	  
+						<b data-bind="text:product_name"></b>
+						<span><em>Rs: </em><em data-bind="text:Price"></em></span>
+						<img data-bind="attr:{src:image}" width="100" height="100">
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>	
+	<footer class="panel-footer text-center">Copyrights 2019</footer>
+</div>
+	<script>
+		require(['config'],function(){
+			require(['product']);
+		});
+	</script>
+</body>
+</html>
