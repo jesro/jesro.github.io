@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery with RequireJS</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script data-main="libs/main" src="libs/require.js"></script>
+	<link rel="stylesheet" href="modules/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse"><p class="navbar-brand">Jquery with RequireJS</p></nav>
+
+	<div id="full">
+	<div id="whole" class="col-sm-3">
+		<table>
+			<tr><th>Search</th></tr>
+			<tr><td><input type="text" placeholder="products" id="search"></td></tr>
+			<tr><th>Sort</th></tr>
+			<tr><td><select id="first">
+				<option value="" selected disabled hidden>Sort By</option>
+				<option value="a-z">A-Z</option><option value="z-a">Z-A</option><option>Low Price To High Price</option>
+				<option>High Price To Low Price</option></select></td></tr>
+			<tr><th>Filter By</th></tr>
+			<tr><td><input class="someflter" type="checkbox" id="one" value="american">American tourister</td></tr>
+			<tr><td><input class="someflter" type="checkbox" id="two"  value="safari">Safari</td></tr>
+			<tr><td><input class="someflter" type="checkbox" id="three"  value="skybags">Skybags</td></tr>
+			<tr><td><input class="someflter" type="checkbox" id="four"  value="pronto">Pronto</td></tr>
+			<tr><td><input class="someflter" type="checkbox" id="five"  value="aristocrat">Aristocrat</td></tr>
+			<tr><td><input class="someflter" type="checkbox" id="six"  value="amazonbasics">AmazonBasics</td></tr>
+			<tr><th>Dependency Filter</th></tr>
+			<tr><td><select class="dependency">
+				<option value="">Primary Brands</option>
+				<option value="american">American tourister</option>
+				<option value="safari">Safari</option>
+				<option value="skybags">Skybags</option>
+			</select></td>
+				<tr><td id="newdropdown">
+				</td></tr>
+			</tr>
+			<tr><td><p data-bind="text:firstdependency"></p></td></tr>
+			<tr><td><p data-bind="text:newdependency"></p></td></tr>
+		</table>
+	</div>
+
+	<div id="product" class="col-sm-9"></div>
+
+	<div id="image"><span></span></div>
+	 <div id="pro" style="text-align:center;"></div>
+	
+</div>
+
+<div class="pagination">
+		<ul>
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ul>
+	</div>
+<footer class="container-fluid text-center foot"><div class="copyrights"> <p class="white-txt">Jquery with RequireJS © 2019
+            </p></div></footer>
+	<script>
+	require(['main'],function(){
+		require(['bootstrap','work','custom','paginate']);
+	});
+		
+	</script>
+</body>
+</html>

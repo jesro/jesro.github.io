@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Products</title>
+  <link rel="stylesheet" href="modules/style.css">
+ 	<script data-main="libs/main" src="libs/require.js"></script>
+ </head>
+ <body>
+ 	<div class="container">
+ 		<div id="left">
+ 			<span id="leftpic">
+ 				<img src="" width="300px">
+ 			</span>
+ 		</div>
+ 		<div id="center">
+ 			<span id="title">
+ 				<h3></h3>
+ 			</span>
+ 			<span id="price">
+ 				<p>Sale : Rs <span id="money"></span>.00</p>
+ 			</span>
+ 			<span id="sku">
+ 				<p>SKU <span id="skuget"></span></p>
+ 			</span>
+ 			<span id="para">
+ 				<p><em>Pay on Delivery (Cash/Card) eligible</em> <br>
+				EMI starts at <b>₹<span class="gang">570</span></b>. No Cost EMI available if you checkout only with this item. Options <br>
+				<strong>In stock.</strong><br>
+				<b>Guaranteed delivery</b> to pincode 600006 - <em>Chennai by Tomorrow 11am with Morning delivery</em> — Order in the next <span class="gany">12</span> hours and <span class="gan">20</span> minutes <br>
+				Sold by STPL Exclusive Online ( <b class="gon"> 4.4 </b> out of <b class="gan"> 5 </b> |<b> 11</b>,<b class="gang">598 </b> ratings) and <i>Fulfilled by Amazon. Gift-wrap available</i></p>
+ 			</span>
+ 		</div>
+ 		<div id="right">
+ 			<span id="addtocart">
+ 				<button>ADD To CART</button>
+ 			</span><br>
+ 			<span id="buynow">
+ 				<button>BUY NOW</button>
+ 			</span>
+ 		</div>
+ 	</div>
+ 	<script>
+    require(['main'],function(){
+      require(['bootstrap','workone']);
+    });
+ 		
+ 	</script>
+  </body>
+ </html>
