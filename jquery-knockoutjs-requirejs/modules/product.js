@@ -37,7 +37,7 @@ var viewModel=function(){
 }
 	ko.applyBindings(viewModel);
 	jQuery(document).ready(function($){
-	  $('ul li').slick({
+	  $('ul').slick({
 		  infinite: true,
 		  slidesToShow: 3,
 		  slidesToScroll: 3
