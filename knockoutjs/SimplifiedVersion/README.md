@@ -1,0 +1,10 @@
+## SAMPLE DUMMY PRODUCT NAMES FOR REFERENCE ONLY - USED NAMES ARE NOT REAL
+## PROJECT SCREENSHOT BELOW
+## PLP - PROJECT LIST PAGE  FILTER SELECT
+
+![screenshot 17](https://user-images.githubusercontent.com/10104522/48579516-b2b32b80-e942-11e8-9f64-b087e4744806.png)
+
+
+## PLP - PROJECT LIST PAGE  FILTER MULTI-SELECT
+
+![screenshot 18](https://user-images.githubusercontent.com/10104522/48579534-bfd01a80-e942-11e8-8731-0e50d6c835fc.png)
