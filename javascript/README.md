@@ -1,0 +1,9 @@
+## SAMPLE DUMMY GOOGLE PRODUCT IMAGES FOR REFERENCE ONLY - USED NAMES ARE NOT REAL
+## PROJECT SCREENSHOT BELOW
+## PLP - PROJECT LIST PAGE
+
+![screenshot 8](https://user-images.githubusercontent.com/10104522/48577761-f8212a00-e93d-11e8-92b1-81b4f00e463c.png)
+
+## PDP - PRODUCT DESCRIPTION PAGE
+
+![screenshot 9](https://user-images.githubusercontent.com/10104522/48578002-944b3100-e93e-11e8-85be-53b7aa0e94e2.png)
