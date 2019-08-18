@@ -1,0 +1,74 @@
+.jesro{
+	width: 275px;
+	height: 410px;
+	border-radius: 10px;
+	padding: 10px;
+    margin: 50px;
+	background-color: black;
+	background-size: 175px 248px;
+	box-shadow: 10px 10px 15px 2px grey;
+}
+p{
+	color: #ffd11a;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Alegreya', serif;
+	padding: 0px;
+	text-shadow: 3px 3px 2px grey;
+	font-family: 'PT Serif Caption', serif;
+}
+h3{
+	color: #ffdb4d;
+	text-align: right;
+	text-shadow: 3px 3px 5px #ffdb4d;
+	font-family: 'Stalemate', cursive;
+}
+img{
+	width: 40%;
+	height: 70%;
+	margin: auto;
+	float: left;
+}
+#jj{
+	padding: 0px 2px 0px 2px;
+}
+h6{
+	white-space: pre;
+	text-align: right;
+	color: #00ff00;
+	font-family: 'Mr De Haviland', cursive;
+	font-size: 20px;
+	color: hsl(120,50%,50%);
+	line-height: 100%;
+}
+img#design{
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
